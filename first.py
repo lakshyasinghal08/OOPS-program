@@ -200,28 +200,91 @@
 # c3 = employee("singhal" , 3 , 100000)
 # c3.display()
 
-class bank :
-    print("ft : Banking system :")
-    def __init__(self ,name):
-        self.name  = name
+# class bank :
+#     print("ft : Banking system :")
+#     def __init__(self ,name):
+#         self.name  = name
 
-    def total_amount(self, amount):
-          self.amount = amount
+#     def total_amount(self, amount):
+#           self.amount = amount
     
-    def debit(self , debit ):        
-        self.debit = debit
-        self.amount = self.amount - self.debit
-        print("amount  = ",self.amount)
+#     def debit(self , debit ):        
+#         self.debit = debit
+#         self.amount = self.amount - self.debit
+#         print("after debit : ")
+#         print("amount  = ",self.amount)
        
         
-    def credit(self ,credit  ):
-        self.credit = credit
-        self.amount = self.amount + self.credit
-        print("amount =",self.amount)
+#     def credit(self ,credit  ):
+#         self.credit = credit
+#         print("after credit : ")
+#         self.amount = self.amount + self.credit
+#         print("amount =",self.amount)
         
         
     
-c1 = bank("lakshya")
-c1.total_amount(100000) 
-c1.debit(400)
-c1. credit(199)
+# c1 = bank("lakshya")
+# c1.total_amount(10000) 
+# c1.debit(400)
+# c1. credit(199)
+
+# class circle :
+#     def __init__(self , radius):
+#         self.radius = radius
+        
+#     def area(self ):
+#         self.area = 3.14*self.radius*self.radius
+#         print("area of a circle :",self.area)
+        
+#     def perimeter(self):
+#         self.perimeter = 2*3.14*self.radius
+#         print("perimeter :",self.perimeter)
+        
+# c1 = circle(21)
+# c1.area()
+# c1.perimeter()
+
+# class employee :
+#     def __init__(self , role , dept  , salary):
+#         self.role =role
+#         self.dept =dept
+#         self.salary = salary
+        
+#     def showdetails(self):
+#         print("role  =",self.role)
+#         print("dept  =",self.dept)
+#         print("salary  =",self.salary)
+       
+# class engineer(employee):
+#     def __init__(self , name , age):
+#         self.name = name
+#         self.age  = age
+#         super().__init__("manager" , "it"  , "90000")
+    
+#     def display(self):
+#         print("name  =",self.name)
+#         print("age =",self.age)
+#         print("role  =",self.role)
+#         print("dept  =",self.dept)
+#         print("salary  =",self.salary)
+        
+# c1  = employee("manager"  ,"it" ,"80000")
+# c1.showdetails()
+
+# e1 = engineer("lakshya" ,18)
+# e1.display()
+
+class order :
+    def __init__(self ,item , price):
+        self.item = item
+        self.price =price
+        
+    def __gt__(self ,o2):
+        return self.price > self.o2
+        
+o1 = order("laptop" , 70000)
+o2 = order("mobile" , 40000)
+if(o1.price > o2.price):
+    print(o1.item ,"object 1 is expensive: the rate is :", o1.price)
+else:
+    print(o2.item  , "pbject 2 is expensive: the rate is :", o2.price)
