@@ -19,3 +19,20 @@ class demo{
     cout<<"square is = "<<findsqr(f);
     return 0;
    }
+   class damn{
+    int x;
+    public:
+    void input(int n){
+        x = n;
+    }
+    friend int findsqr(damn);
+   };
+   int findsqr(damn d){
+    return d.x*d.x;
+   }
+   int main(){
+    class damn d;
+    d.input(5);
+    cout<<"the square of input is :"<<findsqr(d)<<endl;
+    return 0;
+   }

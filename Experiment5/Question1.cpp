@@ -22,3 +22,23 @@ int main(){
     s1.display();
     return 0;
 }
+class employee{
+    private:
+    int id;
+    char name[100];
+    public:
+    employee(){
+        cout<<"enter the name and id :";
+        cin>>name>>id;
+    }
+    void display(){
+        cout<<"name = "<<name<<endl;
+        cout<<"id = "<<id<<endl;
+    }
+};
+int main(){
+    class employee e;
+    e.display();
+
+    return 0;
+}

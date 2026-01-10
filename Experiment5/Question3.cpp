@@ -31,3 +31,33 @@ int main(){
     d4.display();
     return 0;
 }
+class damn{
+    int data;
+    public:
+    damn(){
+        data = 100;
+        cout<<"default constructor :";
+    }
+    damn(int x){
+        data = x;
+    }
+    damn(damn &d){
+        data = d.data;
+    }
+    void show(){
+        cout<<"data = "<<data<<endl;
+    }
+};
+int main(){
+damn d1;
+damn d2 = d1;
+damn d3;
+d3 = d1;
+damn d4(d3);
+d1.show();
+d2.show();
+d3.show();
+d4.show();
+
+return 0;
+}
