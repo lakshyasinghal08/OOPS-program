@@ -39,3 +39,45 @@ int main(){
     o.mmm();
     return 0;
 }
+
+class operate{
+    private:
+    int c,d,k;
+    public:
+    void input();
+    void mmm();
+};
+
+void operate :: input(){
+    cout<<"enter the value of c , d ,k\n:";
+    cin>>c>>d>>k;
+}
+
+void operate :: mmm(){
+    int max,mid,min;
+    if(c>d && c>k){
+        max = c;
+        mid = (d>k)?d:k;
+        min = (d<k)?d:k;
+    }
+    else if(d>c && d>k){
+        max = d;
+        mid = (c>k)?c:k;
+        min = (c<k)?c:k;
+    }
+    else{
+        max = k;
+        mid = (c>d)?c:d;
+        min = (c<d)?c:d;
+    }
+    cout<<"max = "<<max<<endl;
+    cout<<"mid = "<<mid<<endl;
+    cout<<"min = "<<min<<endl;
+}
+int main(){
+    class operate p;
+    p.input();
+    p.mmm();
+
+    return 0;
+}

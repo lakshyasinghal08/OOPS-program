@@ -16,3 +16,20 @@ int main(){
     cout<<"GPA of 5 students : "<<sum/5<<endl;
     return 0;
 }
+
+int main(){
+    int *marks = new int[5];
+    float sum=0;
+    cout<<"enter the marks of 5 subjects :";
+    for(int i=0; i<5; i++){
+        cin>>marks[i];
+        sum += marks[i];
+    }
+    float average = sum / 5;
+    float gpa = average/10;
+    cout<<"total marks = "<<sum<<endl;
+    cout<<"average = "<<average<<endl;
+    cout<<"gpa = "<<gpa<<endl;
+
+    return 0;
+}

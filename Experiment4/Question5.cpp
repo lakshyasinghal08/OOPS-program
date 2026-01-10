@@ -22,3 +22,24 @@ void area(int l,int b){
 void area(int s){
     cout<<"Area of square : "<<s*s<<endl;
 }
+int main(){
+    void area(int);
+    void area(float);
+    void area(int , int);
+    float r = 2.4;
+    int a = 2;
+    int b = 5, c = 8;
+    area(a);
+    area(r);
+    area(b,c);
+    return 0;
+}
+void area(int a){
+    cout<<"the area of square :"<<a*a<<endl;
+}
+void area(float r){
+    cout<<"the area of the circle :"<<2*3.14*r<<endl;
+}
+void area(int b , int c){
+    cout<<"the area of the rectangle = "<<b*c<<endl;
+}

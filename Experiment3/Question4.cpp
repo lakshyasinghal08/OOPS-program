@@ -35,3 +35,36 @@ int main(){
     }
     return 0;
 }
+
+class student {
+    private:
+    int age;
+    char name[20];
+    public:
+    void input(){
+        cout<<"enter the name : ";
+        cin>>name;
+        cout<<"enter the age : ";
+        cin>>age;
+    }
+    void show(){
+        cout<<"name = "<<name<<endl;
+        cout<<"age = "<<age<<endl;
+    }
+};
+int main(){
+    class student s[10];
+    int n;
+    cout<<"enter the no. of data you want to store :";
+    cin>>n;
+    cout<<"print the students data :";
+    for(int i=0; i<n; i++){
+        s[i].input();
+    }
+    cout<<"student data :";
+    for(int i=0; i<n; i++){
+        s[i].show();
+    }
+
+    return 0;
+}

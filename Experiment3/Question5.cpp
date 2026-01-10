@@ -32,3 +32,34 @@ int main(){
     st.show();
     return 0;
 }
+
+class student{
+    private :
+    int id;
+    char name[20];
+    int marks[10];
+    public:
+    void input(){
+        cout<<"enter the name and the id \n";
+        cin>>name>>id;
+        cout<<"enter the marks for 3 subject:";
+        for(int i=0;i <3; i++){
+            cin>>marks[i];
+        }
+    }
+    void show(){
+        cout<<"name = "<<name<<endl;
+        cout<<"id = "<<id<<endl;
+        cout<<"student marks:";
+        for(int i=0; i<3; i++){
+            cout<<marks[i]<<endl;
+        }
+    }
+};
+int main(){
+class student s;
+s.input();
+s.show();
+
+return 0;
+}

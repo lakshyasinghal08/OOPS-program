@@ -41,3 +41,47 @@ int main() {
    o.show();
     return 0;
 }
+
+class operationn {
+private:
+int a , b,sum,sub,mul,div,mod;
+public:
+void input();
+void airth();
+void show();
+};
+
+void operationn :: input(){
+  cout<<"enter the value of a \n";
+  cin>>a;
+  cout<<"enter the value of b \n";
+  cin>>b;
+}
+
+void operationn :: airth(){
+  sum = a+b;
+  sub = a-b;
+  mul = a*b;
+  div = a/b;
+  mod = a%b;
+}
+
+void operationn :: show(){
+  cout<<"addition = "<<sum<<endl;
+  
+  cout<<"substraction = "<<sub<<endl;
+  
+  cout<<"multiply = "<<mul<<endl;
+  
+  cout<<"division = "<<div<<endl;
+  
+  cout<<"reminder = "<<mod<<endl;
+}
+int main(){
+  class operationn o;
+  o.input();
+  o.airth();
+  o.show();
+
+  return  0;
+}

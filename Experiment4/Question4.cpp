@@ -27,3 +27,32 @@ void show(char ch){
 void show(char *s){
     cout<<"String : "<<s<<endl;
 }
+
+int main(){
+    void show(int);
+    void show(float);
+    void show(char);
+    void show(string);
+    int x = 10;
+    float y = 12.9;
+    char ch = 'l';
+    string  s ="lakshya";
+    show(x);
+    show(y);
+    show(ch);
+    show(s);
+
+    return 0;
+}
+void show(int x){
+    cout<<"integer = "<<x<<endl;
+}
+void show(float y){
+    cout<<"float = "<<y<<endl;
+}
+void show(char ch){
+    cout<<"character = "<<ch<<endl;
+}
+void show(string s){
+    cout<<"string = "<<s<<endl;
+}
