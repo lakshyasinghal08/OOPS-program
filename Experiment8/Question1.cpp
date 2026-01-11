@@ -42,3 +42,45 @@ st.in();
 st.out();
 return 0;
 }
+class student{
+   private:
+   int age;
+   char name[20];
+   public:
+   void input(){
+      cout<<"enter the data:";
+      cin>>age;
+      cout<<"enter the name :";
+      cin>>name;
+   }
+   void show(){
+      cout<<"name = "<<name<<endl;
+      cout<<"age = "<<age<<endl;
+   }
+};
+class delta : public student {
+   private:
+   int id;
+   char sname[20];
+   public:
+   void in(){
+      cout<<"enter the id  :";
+      cin>>id;
+      cout<<"enter the sir name :";
+      cin>>sname;
+   }
+   void out(){
+      cout<<"id = "<<id<<endl;
+      cout<<"sir name = "<<sname<<endl;
+   }
+};
+
+int main(){
+   class delta d;
+   d.input();
+   d.in();
+   d.show();
+   d.out();
+
+   return 0;
+}

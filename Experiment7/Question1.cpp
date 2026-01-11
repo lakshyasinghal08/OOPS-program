@@ -21,3 +21,25 @@ int main(){
     staticdemo :: display();
     return 0;
 }
+
+class student{
+    static int a;
+    static float b;
+    static char c;
+    public:
+    static void show(){
+        cout<<"a = "<<a<<endl;
+        cout<<"b = "<<b<<endl;
+        cout<<"c = "<<c<<endl;
+    }
+};
+int student :: a = 100;
+float student :: b = 2.3;
+char student ::  c = 'l';
+
+int main(){
+    class student s;
+    student :: show();
+
+    return 0;
+}

@@ -19,3 +19,26 @@ int main(){
     cout<<"Area of circle = "<<c.area()<<endl;
     return 0;
 }
+class rect{
+    private:
+    const int length;
+    const int breadth;
+    public:
+    rect(int l , int b):length(l) , breadth(b){}
+    int area()const{
+        return length * breadth;
+    }
+    int getlength()const{
+        return length;
+    }
+    int getbreadth()const{
+        return breadth;
+    }
+};
+int main(){
+    rect  r(2,6);
+    cout<<"the area of the rectangle : "<<r.area()<<endl;
+    cout<<"the value of the length = "<<r.getlength()<<endl;
+    cout<<"the value of the side = "<<r.getbreadth()<<endl;
+    return 0;
+}

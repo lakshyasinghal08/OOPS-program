@@ -24,3 +24,23 @@ int main(){
     
     return 0;
 }
+class damn{
+    const int c; int d;
+    public:
+    damn(int a , int b) : c(a),d(b){};
+    void display() const{
+        cout<<"c = "<<c<<endl;
+        cout<<"d = "<<d<<endl;
+    }
+    void changey(int neww){
+        d = neww;
+    }
+};
+int main(){
+    damn d(20,30);
+    d.display();
+    d.changey(100);
+    d.display();
+
+    return 0;
+}

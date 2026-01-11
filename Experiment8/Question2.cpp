@@ -59,3 +59,53 @@ int main(){
    m.get();
    return 0;
 }
+class stuu{
+   int age;
+   int id;
+   public:
+   void input(){
+      cout<<"enter the age and the id :";
+      cin>>age>>id;
+   }
+   void show(){
+      cout<<"age = "<<age<<endl;
+      cout<<"id = "<<id<<endl;
+   }
+};
+class dent : public stuu{
+   char name[20];
+   char sname[30];
+   public:
+   void in(){
+      cout<<"enter the name and the sirname :";
+      cin>>name>>sname;
+   }
+   void showw(){
+      cout<<"name = "<<name<<" "<<sname<<endl;
+   }
+};
+class teach : public dent{
+   int fee;
+   float mark;
+   public:
+   void debit(){
+      cout<<"enter the fee and the marks :";
+      cin>>fee>>mark;
+   }
+   void credit(){
+      cout<<"fee = "<<fee<<endl;
+      cout<<"mark = "<<mark<<endl;
+   }
+};
+
+int main(){
+   class teach t;
+   t.input();
+   t.in();
+   t.debit();
+   t.show();
+   t.showw();
+   t.credit();
+
+   return 0;
+}

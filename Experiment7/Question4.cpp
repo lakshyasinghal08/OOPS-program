@@ -16,3 +16,18 @@ int main(){
     cout<<"Area of rectangle = "<<r.area()<<endl;
     return 0;
 }
+class rect{
+    const float len;
+    const float bre;
+    public:
+    rect(float a , float b):len(a),bre(b){};
+    float area() const{
+        return len*bre;
+    }
+};
+int main(){
+    rect r(2.3,4.8);
+    cout<<"the area of the circle = "<<r.area()<<endl;
+
+    return 0;
+}
