@@ -28,3 +28,31 @@ int main(){
   cout<<"sum of two integer ="<<floatadd.getsum()<<endl;
   return 0;
 }
+
+template<class  T>
+class add{
+  private:
+  T num1 ;
+  T num2 ;
+  public:
+    add(T a , T b){
+      num1 = a;
+      num2 = b;
+    }
+    T getsum(){
+      return num1+num2;
+    }
+};
+int main(){
+int x ,y;
+cout<<"enter the value of x and y :";
+cin>>x>>y;
+add<int> intadd(x,y);
+cout<<"sum of the integer is :"<<intadd.getsum()<<endl;
+float p,q;
+cout<<"enter the value of p and q :";
+cin>>p>>q;
+add<float> floatadd(p,q);
+cout<<"sum of the two float is :"<<floatadd.getsum()<<endl;
+return 0;
+}

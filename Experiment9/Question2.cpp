@@ -46,3 +46,43 @@ class demo
             k.show();
             return 0;
         }
+
+        class operate{
+            private:
+            int a,b,c,d;
+            public:
+            void input(){
+                cout<<"enter the value of a,b,c,d:";
+                cin>>a>>b>>c>>d;
+            }
+            void increment(){
+                a++;
+                b++;
+                c++;
+                d++;
+            }
+            void decrement(){
+                a--;
+                b--;
+                c--;
+                d--;
+            }
+            void show(){
+                cout<<"a = "<<a<<endl;
+                cout<<"b = "<<b<<endl;
+                cout<<"c = "<<c<<endl;
+                cout<<"d = "<<d<<endl;
+            }
+        };
+        int main(){
+            class operate o;
+            o.input();
+            o.decrement();
+            o.show();
+            cout<<"after this :";
+            o.increment();
+            o.increment();
+            o.show();
+
+            return 0;
+        }

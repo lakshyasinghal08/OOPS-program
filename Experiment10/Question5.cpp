@@ -20,3 +20,22 @@ int main(){
   }}
   return 0;
 }
+int main(){
+  int a[100],n;
+  cout<<"how many number you want to enter:";
+  cin>>n;
+  cout<<"enter : "<<n<<"numbers :"<<endl;
+  for (int i=0; i<n; i++){
+cin>>a[i];
+  }
+  for(int i=0; i<n; i++){
+    try{
+      if(a[i] > 100)
+        throw "greater than 100 : ";
+    }
+    catch(const char *m){
+      cout<<a[i] <<" :: "<<m<<endl;
+    }
+  }
+  return 0;
+}

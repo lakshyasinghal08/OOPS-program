@@ -18,3 +18,19 @@ int main(){
   }
   return 0;
 }
+
+int main(){
+  int a,b;
+  cout<<"enter the value of a and b:";
+  cin>>a>>b;
+  try{
+    if(b==0)
+    throw " division bu o is not allowed :";
+    int result = a/b;
+    cout<<"result = "<<result<<endl;
+  }
+  catch(const char* msg){
+    cout<<"error :: "<<msg<<endl;
+  }
+  return 0;
+}

@@ -32,3 +32,35 @@ int main(){
   C.show();
   return 0;
 }
+class visual{
+  private:
+  int a,b;
+  public:
+  void input(){
+    cout<<"enter the value of the a and b:";
+    cin>>a>>b;
+  }
+  void show(){
+    cout<<"a = "<<a<<endl;
+    cout<<"b = "<<b<<endl;
+  }
+  friend visual operator + (visual obj1,visual obj2);
+};
+visual operator + (visual obj1,visual obj2){
+  visual temp;
+  temp.a = obj1.a+obj2.a;
+  temp.b = obj1.b+obj2.b;
+  return temp;
+}
+int main(){
+  class visual A,B,C;
+  cout<<"data for first : ";
+  A.input();
+  cout<<"data for second :";
+  B.input();
+  C = A+B;
+  cout<<"result = \n";
+  C.show();
+
+  return 0;
+}

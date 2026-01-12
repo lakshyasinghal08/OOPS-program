@@ -16,3 +16,17 @@ int main(){
   }
   return 0;
 }
+int main(){
+  int a;
+  cout<<"enter the valur of a :";
+  cin>>a;
+  try{
+    if(a<0)
+    throw "a is a negative number :";
+    cout<<a<<"is a positive number ::";
+  }
+  catch(const char *msg){
+    cout<<"negative : "<<msg<<endl;
+  }
+  return 0;
+}

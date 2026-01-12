@@ -28,3 +28,60 @@ int main(){
  sw.close();
  return 0;
 }
+int main(){
+ofstream evenfile("even.txt");
+ofstream oddfile("odd.txt");
+int num;
+cout<<"enter the numbers  :";
+for(int i=0; i<20; i++){
+    cin>>num;
+
+    if(num % 2 == 0){
+        evenfile<<num<<" "<<endl;
+    }
+    else{
+        oddfile<<num<<" "<<endl;
+    }
+}
+evenfile.close();
+oddfile.close();
+
+ifstream readeven("even.txt");
+ifstream readodd("odd.txt");
+
+while(readeven >> num){
+    cout<<num<<endl;
+}
+while(readodd >> num){
+    cout<<num<<endl;
+}
+readeven.close();
+readodd.close();
+
+return 0;
+}
+
+class A{
+    private:
+    int id;
+    public:
+    void input(){
+        cout<<"enter the id :";
+        cin>>id;
+    }
+    void show(){
+        cout<<"id = "<<id<<endl;
+    }
+    int setid(int id){
+     this->id = id;
+    }
+};
+int main(){
+    class A a;
+    a.input();
+    a.show();
+    a.setid(101);
+    a.show();
+
+    return 0;
+}

@@ -21,3 +21,21 @@ int main(){
   }
   return 0;
 }
+int main(){
+  int a ,b;
+  cout<<"enter the value of a and b:";
+  cin>>a>>b;
+  int m = (a>b)?true:false;
+  try{
+    if(m){
+      cout<<"substraction = "<<a-b<<endl;
+    }
+    else{
+      throw "substraction is not posssible :";
+    }
+  }
+  catch(const char *msg){
+    cout<<"caught = "<<msg<<endl;
+  }
+return 0;
+}

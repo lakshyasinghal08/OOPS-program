@@ -16,3 +16,17 @@ int main(){
   }
   return 0;
 }
+int main(){
+  int a;
+  cout<<"enter the value of a :";
+  cin>>a;
+  try{
+    if(a%2!=0)
+    throw " a is an odd number :";
+    cout<<a <<"is an even number :: ";
+  }
+  catch(const char *msg){
+    cout<<" "<<msg<<endl;
+  }
+return 0;
+}

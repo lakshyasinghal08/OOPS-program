@@ -37,3 +37,37 @@ int main(){
   cout<<"ch2 = "<<ch2<<endl;
   return 0;
 }
+
+template<typename T>
+void swapp(T&a, T&b){
+  T temp = a;
+  a = b;
+  b = temp;
+}
+int main(){
+  int p,q;
+  float r,s;
+  char c1,c2;
+  p = 3 , q = 9;
+  r = 9.9 , s = 5.4;
+  c1 = 'l', c2 = 'k';
+  cout<<"before swap :";
+  cout<<"p = "<<p<<endl;
+  cout<<"q = "<<q<<endl;
+  cout<<"r = "<<r<<endl;
+  cout<<"s = "<<s<<endl;
+  cout<<"c1 = "<<c1<<endl;
+  cout<<"c2 = "<<c2<<endl;
+  swap(p,q);
+  swap(s,r);
+  swap(c1,c2);
+  cout<<"after swap :";
+  cout<<"p = "<<p<<endl;
+  cout<<"q = "<<q<<endl;
+  cout<<"r = "<<r<<endl;
+  cout<<"s = "<<s<<endl;
+  cout<<"c1 = "<<c1<<endl;
+  cout<<"c2 = "<<c2<<endl;
+
+  return 0;
+}

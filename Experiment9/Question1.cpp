@@ -34,3 +34,33 @@ int main(){
     d.show();
     return 0;
 }
+class operate{
+    private:
+    int a,b,c,d;
+    public:
+    void input(){
+        cout<<"enter the value of the a ,b , c, d:";
+        cin>>a>>b>>c>>d;
+    }
+    void increment(){
+        a++;
+        b++;
+        c++;
+        d++;
+    }
+    void show(){
+        cout<<"a = "<<a<<endl;
+        cout<<"b = "<<b<<endl;
+        cout<<"c = "<<c<<endl;
+        cout<<"d = "<<d<<endl;
+    }
+};
+int main(){
+    class operate o;
+    o.input();
+    o.show();
+    o.increment();
+    o.show();
+
+    return 0;
+}

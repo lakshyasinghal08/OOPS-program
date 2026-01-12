@@ -36,3 +36,38 @@ int main() {
     d.show();
     return 0;
 }
+
+class update{
+    private:
+    int a,b,c,d;
+    public:
+    void input(){
+        cout<<"enter the value of the a,b,c,d";
+        cin>>a>>b>>c>>d;
+    }
+    void show(){
+        cout<<"a = "<<a<<endl;
+        cout<<"b = "<<b<<endl;
+        cout<<"c = "<<c<<endl;
+        cout<<"d = "<<d<<endl;
+    }
+    friend void increment(update& obj);
+};
+void increment(update& obj){
+obj.a++;
+obj.b++;
+obj.c++;
+obj.d++;
+}
+
+int main(){
+    class update u;
+    u.input();
+    cout<<"before increment :";
+    u.show();
+    cout<<"after increment :";
+    increment(u);
+    u.show();
+
+    return 0;
+}

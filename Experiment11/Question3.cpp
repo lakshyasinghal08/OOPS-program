@@ -29,3 +29,31 @@ template<class T>
   cout<<"min float = "<<minimum(p,q)<<endl;
   return 0;
  }
+template<class T>
+T add(T a , T b){
+    return a+b;
+}
+template<class T>
+T maximum(T a , T b){
+    return (a>b)?a:b;
+}
+template<class T>
+T minimum(T a , T b){
+    return (a<b)?a:b;
+}
+int main(){
+    int x,y;
+    cout<<"enter the value of x and y:";
+    cin>>x>>y;
+    cout<<"addition = "<<add(x,y);
+    cout<<"maximum = "<<maximum(x,y);
+    cout<<"minimum = "<<minimum(x,y);
+    float p ,q ;
+    cout<<"enter the value of p and q:";
+    cin>>p>>q;
+    cout<<"addition = "<<add(p,q);
+    cout<<"maximum = "<<maximum(p,q);
+    cout<<"minimum = "<<minimum(p,q);
+
+    return 0;
+}
